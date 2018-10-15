@@ -1,45 +1,79 @@
-*{
-    box-sizing: border-box;
-    background-color: #f1ece5; 
+* {
+  box-sizing: border-box;
+  /* background-color: #f1ece5; */
+  background-color: black;
 }
-.hContainer{
-/* display: inline-block; */
-margin: 40px;
+.hContainer {
+  /* display: inline-block; */
+  margin: 40px;
 }
-.player1P, .player2P{
-    float: left;
+.player1P,
+.player2P {
+  float: left;
 }
 
-.player1, .player2{
-    float: left;
+.player1,
+.player2 {
+  float: left;
 }
-/* .player2{
-    float: left;
+
+.clear {
+  clear: both;
+}
+
+.mainContainer {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 50px;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  /* border: 1px solid #978064; */
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+  height: 100px;
+  width: 50xp;
+  overflow: hidden;
+  /* width: 50px; 
+    height: 50px; */
+}
+
+footer {
+  padding: 0 30px 0 30px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: rgba(255, 255, 255, 0.8);
+}
+/* .copyright {
+  float: left;
+  font-family: "Raleway", sans-serif;
 } */
-.clear{
-    clear: both;
+.message {
+  float: right;
+  font-family: "Raleway", sans-serif;
+}
+.subDiv .backArrow {
+  margin: 20px;
+  float: left;
 }
 
-.mainContainer{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    /* background-color:; */
-    padding: 10px;
-    outline: 1px dashed #978064;
-  }
-  .grid-item {
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid #978064;
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
-  }
-/* footer{
-    text-transform: uppercase;
-    padding: 0 20px 0 20px;
-    background-color:  #978064;
-    color: rgb(75, 40, 40);
-    font-size: 14px;
-    letter-spacing: .08px;
-    font-weight: 500;
-  } */
+.subDiv .playagain {
+  /* padding-right: 20px; */
+  float: right;
+}
+.playagain {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black;
+  text-transform: uppercase;
+  font-size: 16px;
+  padding: 10px 10px;
+  margin-right: 50px;
+  margin-top: 50px;
+  border-radius: 6px;
+  font-family: "Raleway", sans-serif;
+}
