@@ -77,3 +77,9 @@ footer {
   border-radius: 6px;
   font-family: "Raleway", sans-serif;
 }
+.radio {
+  color: white;
+  padding-left: 50px;
+  margin: 10px;
+  font-family: "Raleway", sans-serif;
+}

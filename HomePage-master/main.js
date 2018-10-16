@@ -1,17 +1,25 @@
 $(document).ready(function() {
   console.log("XO Game");
-  var player = "X";
+  var player = "";
   var xCount = 0;
   var oCount = 0;
+  var gameWon = false;
+  var endGame = 0;
+  // var status = "";
   var grid = [["0", "1", "2"], ["3", "4", "5"], ["6", "7", "8"]];
   var divs = $(".grid-item");
-  //   var backPage = $(".backArrow");
   var playAgain = $(".playagain");
-  // function game() {
+
+  // When an input is checked,
+  $(".clicked").on("click", function() {
+    player = $("input[name='rbnNumber']:checked").attr("id");
+    console.log(player);
+    // console.log($("input[name='rbnNumber']:checked").val());
+  });
+
   divs.on("click", function() {
     // debugger;
     // Loop through rows
-    // rotation();
     if ($(this).text() === "") {
       for (var i = 0; i < 3; i++) {
         // console.log(grid.length);
@@ -22,12 +30,19 @@ $(document).ready(function() {
           if (grid[i][j] === id) {
             grid[i][j] = player;
             // console.log(player);
+            // debugger;
 
-            $(this).text(player);
+            $(this)
+              .text(player)
+              .addClass("animated swing");
             // console.log(grid[i]);
             // console.log(grid[i][j]);
+
             winner();
-            switchPlayer();
+            if (!gameWon) {
+              switchPlayer();
+            }
+
             // console.log("The array value is " + grid[i][j]);
           }
         }
@@ -36,8 +51,10 @@ $(document).ready(function() {
       alert("Choose another cell");
     }
   });
+
   function winner() {
     //check rows
+    // debugger;
     // debugger;
     for (var i = 0; i < 3; i++) {
       // console.log(grid.length);
@@ -57,6 +74,8 @@ $(document).ready(function() {
         // alert("Congrats player O");
         alertFunction();
         divs.off("click");
+      } else {
+        endGame++;
       }
       xCount = 0;
       oCount = 0;
@@ -75,11 +94,15 @@ $(document).ready(function() {
           //setTimeout
           //   alert("Congrats player X");
           alertFunction();
+
           divs.off("click");
         } else if (oCount === 3) {
           //   alert("Congrats player O");
           alertFunction();
+
           divs.off("click");
+        } else {
+          endGame++;
         }
       }
       xCount = 0;
@@ -94,7 +117,6 @@ $(document).ready(function() {
       // alert("Congrats" + player);
       //   alert("Congrats player " + player);
       alertFunction();
-      // alertFunction()
       divs.off("click");
     } else if (
       (grid[0][2] === "X" && grid[1][1] === "X" && grid[2][0] === "X") ||
@@ -104,6 +126,14 @@ $(document).ready(function() {
       //   alert("Congrats player " + player);
       alertFunction();
       divs.off("click");
+    } else {
+      endGame++;
+    }
+    // console.log("the value" + endGame);
+
+    if (endGame === 117) {
+      // console.log("end game");
+      swal("Try again");
     }
   }
   function switchPlayer() {
@@ -114,24 +144,18 @@ $(document).ready(function() {
     }
   }
   function alertFunction() {
+    gameWon = true;
     setTimeout(function() {
-      alert("Congrats player " + player);
-    }, 1000);
+      // alert("Congrats player " + player);
+      swal("Good job!", "player " + player, "success");
+    }, 50);
   }
+
   playAgain.on("click", function() {
     location.reload();
   });
 
-  //   backPage.on("click", function() {
-  //     window.location = "home.html";
-  //   });
+  // $(window).on("load", function() {
+  //   alert("Alert after page load");
+  // });
 });
-
-//style
-// function rotation(){
-//     $('.grid-item').rotate({
-//       angle:0,
-//       animateTo:360,
-//       callback: rotation
-//     });
-//   }
