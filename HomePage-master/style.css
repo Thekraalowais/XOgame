@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+#particles-js {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+.welcome {
+  position: relative;
+  text-transform: uppercase;
+  width: 430px;
+  height: 320px;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  border-radius: 10px;
+  transform: translate(-50%, -50%);
+}
+.welcome p {
+  color: black;
+  background-color: white;
+  position: absolute;
+  /* margin: 0;
+  padding: 0 0 20px;
+  text-align: center;*/
+  font-size: 22px;
+  font-family: "Raleway", sans-serif;
+  left: 45px;
+  top: 50px;
+}
+.welcome .start {
+  position: absolute;
+  /* border: none; */
+  /* outline: none; */
+  /* height: 40px; */
+  /* border-radius: 6px;*/
+  left: 170px;
+  top: 250px;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  text-transform: uppercase;
+  font-size: 16px;
+  padding: 10px 10px;
+  /*
+  margin-right: 50px;
+  margin-top: 50px; */
+  border-radius: 6px;
+  font-family: "Raleway", sans-serif;
+}
+.logo {
+  position: absolute;
+  left: 150px;
+  top: 120px;
+}
