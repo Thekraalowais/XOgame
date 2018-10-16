@@ -5,10 +5,14 @@ $(document).ready(function() {
   var oCount = 0;
   var gameWon = false;
   var endGame = 0;
+  var score = 0;
   // var status = "";
   var grid = [["0", "1", "2"], ["3", "4", "5"], ["6", "7", "8"]];
   var divs = $(".grid-item");
   var playAgain = $(".playagain");
+
+  var myCat = localStorage.getItem("myCat");
+  console.log(myCat);
 
   // When an input is checked,
   $(".clicked").on("click", function() {
@@ -39,6 +43,7 @@ $(document).ready(function() {
             // console.log(grid[i][j]);
 
             winner();
+            localStorage.setItem("myCat", "Tom");
             if (!gameWon) {
               switchPlayer();
             }
@@ -69,11 +74,15 @@ $(document).ready(function() {
       if (xCount === 3) {
         // alert("Congrats player X");
         alertFunction();
-        divs.off("click");
+        // divs.off("click");
+        score++;
+        $(".player1").text(score);
       } else if (oCount === 3) {
         // alert("Congrats player O");
         alertFunction();
-        divs.off("click");
+        // divs.off("click");
+        score++;
+        $(".player1").text(score);
       } else {
         endGame++;
       }
@@ -94,13 +103,15 @@ $(document).ready(function() {
           //setTimeout
           //   alert("Congrats player X");
           alertFunction();
-
-          divs.off("click");
+          // divs.off("click");
+          score++;
+          $(".player1").text(score);
         } else if (oCount === 3) {
           //   alert("Congrats player O");
           alertFunction();
-
-          divs.off("click");
+          // divs.off("click");
+          score++;
+          $(".player1").text(score);
         } else {
           endGame++;
         }
@@ -117,7 +128,9 @@ $(document).ready(function() {
       // alert("Congrats" + player);
       //   alert("Congrats player " + player);
       alertFunction();
-      divs.off("click");
+      // divs.off("click");
+      score++;
+      $(".player1").text(score);
     } else if (
       (grid[0][2] === "X" && grid[1][1] === "X" && grid[2][0] === "X") ||
       (grid[0][2] === "O" && grid[1][1] === "O" && grid[2][0] === "O")
@@ -125,7 +138,9 @@ $(document).ready(function() {
       // alert("Congrats" + player);
       //   alert("Congrats player " + player);
       alertFunction();
-      divs.off("click");
+      // divs.off("click");
+      score++;
+      $(".player1").text(score);
     } else {
       endGame++;
     }
@@ -147,15 +162,11 @@ $(document).ready(function() {
     gameWon = true;
     setTimeout(function() {
       // alert("Congrats player " + player);
-      swal("Good job!", "player " + player, "success");
+      swal("Good job!", "player " + player + " wins", "success");
     }, 50);
   }
-
   playAgain.on("click", function() {
     location.reload();
+    // divs.empty();
   });
-
-  // $(window).on("load", function() {
-  //   alert("Alert after page load");
-  // });
 });

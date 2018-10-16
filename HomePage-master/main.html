@@ -13,26 +13,30 @@
     <!-- <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css'> -->
     <link rel="stylesheet" href="stylemain.css">
     <link rel="stylesheet" href="animate.css">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 </head>
 
 <body>
     <!-- <img src="images/Tic.png" alt="logo" id="logo" width="200px" height="200px"> -->
-    <div class="radio">
-        <p class="choose">Choose to start:</p>
-        <input type="radio" name="rbnNumber" class="clicked" id="X">X
-        <input type="radio" name="rbnNumber" class="clicked" id="O">O
+    <div class="extra">
+        <div class="radio">
+            <p class="choose">Choose to start:</p>
+            <input type="radio" name="rbnNumber" class="clicked" id="X">X
+            <input type="radio" name="rbnNumber" class="clicked" id="O">O
+        </div>
+        <div class="hContainer">
+            <div class="playerOne">
+                <p class="player1P">Player One: </p>
+                <p class="player1">0</p>
+            </div>
+            <div class="clear"></div>
+            <div class="playerTwo">
+                <p class="player2P">Player Two: </p>
+                <p class="player2">0</p>
+            </div>
+        </div>
     </div>
-    <!-- <div class="hContainer">
-        <div class="playerOne">
-            <p class="player1P">Player One: </p>
-            <p class="player1">0</p>
-        </div>
-        <div class="clear"></div>
-        <div class="playerTwo">
-            <p class="player2P">Player Two: </p>
-            <p class="player2">0</p>
-        </div>
-    </div> -->
+    </div>
     <div class="clear"></div>
     <div class="mainContainer">
         <div id="0" class="grid-item"></div>
@@ -46,7 +50,7 @@
         <div id="8" class="grid-item"></div>
     </div>
     <div class="subDiv">
-        <img src="images/baseline_keyboard_arrow_left_white_48dp.png" alt="back arraow" class="backArrow" width="100px"
+        <img src="images/sharp_keyboard_arrow_left_black_48dp.png" alt="back arraow" class="backArrow" width="100px"
             height="100px" onclick="window.open('index.html', '_self')">
         <button type=" button" class="playagain">Play again!</button>
     </div>

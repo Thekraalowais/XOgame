@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   background-color: black;
+  font-family: "Pacifico", sans-serif;
 }
 #particles-js {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
@@ -20,6 +21,7 @@
   position: absolute;
   border-radius: 10px;
   transform: translate(-50%, -50%);
+  box-shadow: 2px 2px 2px black;
 }
 .welcome p {
   color: black;
@@ -29,7 +31,6 @@
   padding: 0 0 20px;
   text-align: center;*/
   font-size: 22px;
-  font-family: "Raleway", sans-serif;
   left: 45px;
   top: 50px;
 }
@@ -50,8 +51,8 @@
   /*
   margin-right: 50px;
   margin-top: 50px; */
+  box-shadow: 2px 2px 2px black;
   border-radius: 6px;
-  font-family: "Raleway", sans-serif;
 }
 .logo {
   position: absolute;
