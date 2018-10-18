@@ -66,8 +66,8 @@ $(document).ready(function() {
       for (var j = 0; j < 3; j++) {
         if (grid[i][j] === "X") {
           xCount++;
-          console.log(grid[i]);
-          console.log(grid);
+          // console.log(grid[i]);
+          // console.log(grid);
         } else if (grid[i][j] === "O") {
           oCount++;
         }

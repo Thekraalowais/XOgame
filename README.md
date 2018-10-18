@@ -1,6 +1,6 @@
 # XO GAME
 
-I made XO game using HTML, CSS, javaScript, [jQuery](https://code.jquery.com/), [JavaScript library for creating particles](https://github.com/VincentGarreau/particles.js), and [animate.css](https://daneden.github.io/animate.css/).
+I made XO game using HTML, CSS, and javaScript.
 
 ## Approach:
 
@@ -13,3 +13,7 @@ The main process is to compare the Id div with the 3D array values. If they are 
 ## What's next:
 
 ِAdding AI and other features.
+
+## Credits
+
+jQuery](https://code.jquery.com/), [JavaScript library for creating particles](https://github.com/VincentGarreau/particles.js), [Google fonts](https://fonts.google.com/),and [animate.css](https://daneden.github.io/animate.css/).
