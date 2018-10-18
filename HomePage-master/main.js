@@ -148,7 +148,7 @@ $(document).ready(function() {
     gameWon = true;
     setTimeout(function() {
       document.getElementById("xyz").play();
-      swal("Good job!", "player " + player + " wins", "success");
+      swal("Good job!", "player " + player + " won", "success");
     }, 50);
   }
   playAgain.on("click", function() {
