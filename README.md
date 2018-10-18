@@ -4,7 +4,7 @@ I made XO game using HTML, CSS, javaScript, and [jQuery](https://code.jquery.com
 
 ## Approach:
 
-The main process is to compare the Id div with the array values. If they are matched then the player name will save into the array. In addition, there is a counter for each player.
+The main process is to compare the div id with the array values. If they are matched then the player name will save into the array. In addition, there is a counter for each player.
 
 ## Github link:
 
