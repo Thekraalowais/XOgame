@@ -13,19 +13,17 @@ $(document).ready(function() {
   var player1 = $(".player1");
   var player2 = $(".player2");
   //player 1
-  var currentValue =
-    sessionStorage.getItem("player1") || sessionStorage.setItem("player1", 0);
-  // if (currentValue === null) {
-  //   currentValue = sessionStorage.setItem("player1", 0);
-  // }
+  var currentValue = sessionStorage.getItem("player1");
+  if (currentValue === null) {
+    currentValue = sessionStorage.setItem("player1", 0);
+  }
   console.log(currentValue);
   $(".player1").text(currentValue);
   // player 2
-  var currentValue =
-    sessionStorage.getItem("player2") || sessionStorage.setItem("player2", 0);
-  // if (currentValue === null) {
-  //   currentValue = sessionStorage.setItem("player2", 0);
-  // }
+  var currentValue = sessionStorage.getItem("player2");
+  if (currentValue === null) {
+    currentValue = sessionStorage.setItem("player2", 0);
+  }
   $(".player2").text(currentValue);
   // When an input is checked,
   $(".clicked").on("click", function() {
