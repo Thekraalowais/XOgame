@@ -16,4 +16,4 @@ The main process is to compare the Id div with the 3D array values. If they are 
 
 ## Credits
 
-jQuery](https://code.jquery.com/), [JavaScript library for creating particles](https://github.com/VincentGarreau/particles.js), [Google fonts](https://fonts.google.com/),and [animate.css](https://daneden.github.io/animate.css/).
+[jQuery](https://code.jquery.com/), [JavaScript library for creating particles](https://github.com/VincentGarreau/particles.js), [Google fonts](https://fonts.google.com/), [SweetAlert](https://sweetalert.js.org/guides/), and [animate.css](https://daneden.github.io/animate.css/).
