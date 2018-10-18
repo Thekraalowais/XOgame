@@ -37,7 +37,6 @@ $(document).ready(function() {
       if ($(this).text() === "") {
         for (var i = 0; i < 3; i++) {
           var id = $(this).attr("id");
-          // Loop through columns
           for (var j = 0; j < 3; j++) {
             if (grid[i][j] === id) {
               grid[i][j] = player;
@@ -60,7 +59,6 @@ $(document).ready(function() {
   function winner() {
     //check rows
     for (var i = 0; i < 3; i++) {
-      // Loop through columns
       for (var j = 0; j < 3; j++) {
         if (grid[i][j] === "X") {
           xCount++;
@@ -87,7 +85,6 @@ $(document).ready(function() {
     }
     //check columns
     for (var i = 0; i < 3; i++) {
-      // Loop through columns
       for (var j = 0; j < 3; j++) {
         if (grid[j][i] === "X") {
           xCount++;

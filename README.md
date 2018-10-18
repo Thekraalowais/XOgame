@@ -1,6 +1,7 @@
 # XO GAME
 
-I made XO game using HTML, CSS, and javaScript.
+I made XO game using HTML, CSS, javaScript,and
+[jQuery](https://code.jquery.com/), [JavaScript library for creating particles](https://github.com/VincentGarreau/particles.js), [Google fonts](https://fonts.google.com/), [SweetAlert](https://sweetalert.js.org/guides/), and [animate.css](https://daneden.github.io/animate.css/).
 
 ## Approach:
 
@@ -16,4 +17,4 @@ The main process is to compare the Id div with the array values. If they are mat
 
 ## Credits
 
-[jQuery](https://code.jquery.com/), [JavaScript library for creating particles](https://github.com/VincentGarreau/particles.js), [Google fonts](https://fonts.google.com/), [SweetAlert](https://sweetalert.js.org/guides/), and [animate.css](https://daneden.github.io/animate.css/).
+Jack, Trevor, Moath.
