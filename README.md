@@ -11,7 +11,3 @@ I made XO game using HTML, CSS, javaScript, and [jQuery](https://code.jquery.com
 ## What's next:
 
 ِAdding AI and other features.
-
-## Credits
-Jack, Trevor, Moath.
-
