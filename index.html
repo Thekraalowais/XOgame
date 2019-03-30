@@ -1,23 +1,35 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Welcome</title>
+    <link href="HomePage-master/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="animate.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Pacifico"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <title> Welcome </title>
-  <link href="HomePage-master/style.css" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="animate.css">
-  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
-</head>
+  <body>
+    <div class="welcome" style="background-color:beige">
+      <p class="animated bounce">Welcome to Tic Tac Toe</p>
+      <img
+        src="HomePage-master/tic.gif"
+        class="logo"
+        alt="logo"
+        width="120px"
+        height="120px"
+      />
+      <button
+        class="start"
+        onclick="window.open('HomePage-master/main.html', '_self')"
+      >
+        Start
+      </button>
+    </div>
 
-<body>
-  <div class="welcome">
-    <p class="animated bounce">Welcome to Tic Tac Toe</p>
-    <img src="HomePage-master/tic.gif" class="logo" alt="logo" width="120px" height="120px">
-    <button class="start" onclick="window.open('HomePage-master/main.html', '_self')">Start</button>
-  </div>
-
-  <div id="particles-js"></div>
-  <script src="HomePage-master/particles.js"></script>
-  <script src="HomePage-master/app.js"></script>
-</body>
-
+    <div id="particles-js"></div>
+    <script src="HomePage-master/particles.js"></script>
+    <script src="HomePage-master/app.js"></script>
+  </body>
 </html>
